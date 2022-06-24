@@ -1,5 +1,5 @@
 int x = 0;
-int han = 127;
+int han = 70;
 long mato1;
 
 void setup()
@@ -13,7 +13,7 @@ void setup()
 
 void loop()
 {
-    mato1 = random(20);
+    mato1 = random(3);
     delay(1500);
     if (mato1 = 0)
     {
@@ -33,9 +33,4 @@ void loop()
     }
     
     }
-    
-    
-    
-    
-
 }
