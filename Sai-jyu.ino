@@ -14,7 +14,6 @@ void setup()
 void loop()
 {
     mato1 = random(3);
-    delay(1500);
     if (mato1 = 0)
     {
         analogWrite(1, han);
@@ -31,6 +30,6 @@ void loop()
     {
         analogWrite(5, han);
     }
-    
+    delay(1500);
     }
 }
