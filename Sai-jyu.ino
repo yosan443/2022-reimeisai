@@ -1,6 +1,9 @@
+#include <arduino.h>
+
 int a = 0;
 int x = 70;
-int y = 237;
+int d = 1000;
+int s = 0;
 
 void setup()
 {
@@ -36,90 +39,100 @@ void setup()
 void loop()
 {
     a = random(12);
-    if (a = 0)
+    if (s == 1)
+    {
+        delay(30000);
+    }else if (a == 0)
     {
         analogWrite(0, x);
-        analogWrite(1, y);
-        delay(1000);
+        digitalWrite(1, HIGH);
+        delay(d);
         analogWrite(0, 0);
-        analogWrite(1, 0);
-    }else if (a = 1)
+        digitalWrite(1, LOW);
+    }else if (a == 1)
     {
         analogWrite(2, x);
-        analogWrite(3, y);
-        delay(1000);
+        digitalWrite(3, HIGH);
+        delay(d);
         analogWrite(2, 0);
-        analogWrite(3, 0);
-    }else if (a = 2)
+        digitalWrite(3, LOW);
+    }else if (a == 2)
     {
         analogWrite(4, x);
-        analogWrite(5, y);
-        delay(1000);
+        digitalWrite(5, HIGH);
+        delay(d);
         analogWrite(4, 0);
-        analogWrite(5, 0);
-    }else if (a = 3)
+        digitalWrite(5, LOW);
+    }else if (a == 3)
     {
         analogWrite(6, x);
-        analogWrite(7, y);
-        delay(1000);
+        digitalWrite(7, HIGH);
+        delay(d);
         analogWrite(6, 0);
-        analogWrite(7, 0);
-    }else if (a = 4)
+        digitalWrite(7, LOW);
+    }else if (a == 4)
     {
         analogWrite(8, x);
-        analogWrite(9, y);
-        delay(1000);
+        digitalWrite(9, HIGH);
+        delay(d);
         analogWrite(8, 0);
-        analogWrite(9, 0);
-    }else if (a = 5)
+        digitalWrite(9, LOW);
+    }else if (a == 5)
     {
         analogWrite(10, x);
-        analogWrite(11, y);
-        delay(1000);
+        digitalWrite(11, HIGH);
+        delay(d);
         analogWrite(10, 0);
-        analogWrite(11, 0);
-    }else if (a = 6)
+        digitalWrite(11, LOW);
+    }else if (a == 6)
     {
         analogWrite(12, x);
-        analogWrite(13, y);
-        delay(1000);
+        digitalWrite(13, HIGH);
+        delay(d);
         analogWrite(12, 0);
-        analogWrite(13, 0);
-    }else if (a = 7)
+        digitalWrite(13, LOW);
+    }else if (a == 7)
     {
         analogWrite(14, x);
-        analogWrite(15, y);
-        delay(1000);
+        digitalWrite(15, HIGH);
+        delay(d);
         analogWrite(14, 0);
-        analogWrite(15, 0);
-    }else if (a = 8)
+        digitalWrite(15, LOW);
+    }else if (a == 8)
     {
         analogWrite(16, x);
-        analogWrite(17, y);
-        delay(1000);
+        digitalWrite(17, HIGH);
+        delay(d);
         analogWrite(16, 0);
-        analogWrite(17, 0);
-    }else if (a = 9)
+        digitalWrite(17, LOW);
+    }else if (a == 9)
     {
         analogWrite(18, x);
-        analogWrite(19, y);
-        delay(1000);
+        digitalWrite(19, HIGH);
+        delay(d);
         analogWrite(18, 0);
-        analogWrite(19, 0);
-    }else if (a = 10)
+        digitalWrite(19, LOW);
+    }else if (a == 10)
     {
         analogWrite(20, x);
-        analogWrite(21, y);
-        delay(1000);
+        digitalWrite(21, HIGH);
+        delay(d);
         analogWrite(20, 0);
-        analogWrite(21, 0);
-    }else if (a = 11)
+        digitalWrite(21, LOW);
+    }else if (a == 11)
     {
         analogWrite(22, x);
-        analogWrite(26, y);
-        delay(1000);
+        digitalWrite(26, HIGH);
+        delay(d);
         analogWrite(22, 0);
-        analogWrite(26, 0);
+        digitalWrite(26, LOW);
     }
+void setup1() {
     
+}
+void loop1()
+{
+    delay(30000);
+    s = 1;
+}
 }
