@@ -7,6 +7,7 @@ int s = 0;
 
 void setup()
 {
+    serial_begin(9600);
     pinMode(0, OUTPUT);
     pinMode(1, OUTPUT);
     pinMode(2, OUTPUT);
@@ -39,10 +40,8 @@ void setup()
 void loop()
 {
     a = random(12);
-    if (s == 1)
-    {
-        delay(30000);
-    }else if (a == 0)
+    serialPrintln(a);
+    if (a == 0)
     {
         analogWrite(0, x);
         digitalWrite(1, HIGH);
@@ -127,12 +126,4 @@ void loop()
         analogWrite(22, 0);
         digitalWrite(26, LOW);
     }
-void setup1() {
-    
-}
-void loop1()
-{
-    delay(30000);
-    s = 1;
-}
 }
